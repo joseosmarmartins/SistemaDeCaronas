@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Pessoa extends Entidade{
 
@@ -11,6 +13,9 @@ public class Pessoa extends Entidade{
     private String cidade;
     private String uf;
     private String motorista;
+
+    private List<AvaliacaoCaroneiro> avaliacaoCaroneiroList = new ArrayList<>();
+    private List<PessoaCarona> pessoaCaronaList = new ArrayList<>();
 
     public String getNome() {
         return nome;
@@ -82,6 +87,22 @@ public class Pessoa extends Entidade{
 
     public void setMotorista(String motorista) {
         this.motorista = motorista;
+    }
+
+    public List<AvaliacaoCaroneiro> getAvaliacaoCaroneiroList() {
+        return avaliacaoCaroneiroList;
+    }
+
+    public void setAvaliacaoCaroneiroList(List<AvaliacaoCaroneiro> avaliacaoCaroneiroList) {
+        this.avaliacaoCaroneiroList = avaliacaoCaroneiroList;
+    }
+
+    public List<PessoaCarona> getPessoaCaronaList() {
+        return pessoaCaronaList;
+    }
+
+    public void setPessoaCaronaList(List<PessoaCarona> pessoaCaronaList) {
+        this.pessoaCaronaList = pessoaCaronaList;
     }
 
     @Override
