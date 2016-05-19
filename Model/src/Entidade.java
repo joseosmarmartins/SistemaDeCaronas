@@ -9,7 +9,7 @@ public class Entidade {
     private Date dtCadasstro;
     private Date dtAlteracao;
     private Date dtExclusao;
-
+    private Boolean excluido;
 
     public int getId() {
         return id;
@@ -41,6 +41,14 @@ public class Entidade {
 
     public void setDtExclusao(Date dtExclusao) {
         this.dtExclusao = dtExclusao;
+    }
+
+    public Boolean getExcluido() {
+        return excluido;
+    }
+
+    public void setExcluido(Boolean excluido) {
+        this.excluido = excluido;
     }
 
     @Override
